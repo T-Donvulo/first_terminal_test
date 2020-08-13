@@ -12,6 +12,6 @@ describe("It's from where function", function(){
         assert.equal("Bellville", fromWhere("CY"))
     });
     it("Car is from Unknown/ unlisted place", function(){
-        assert.equal("Some other place!",fromWhere("CA, CJ, CY"))
+        assert.equal("Some other place!",fromWhere("CT"))
     });
 });
