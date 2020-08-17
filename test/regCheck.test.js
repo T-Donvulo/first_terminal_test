@@ -10,10 +10,10 @@ describe("regCheck Function", function() {
         assert.equal(true, regCheck("1234455MP", "MP"))
     });
     it("It should return CY", function() {
-        assert.equal(true, regCheck("123456CY", "CY"))        
+        assert.equal(false, regCheck("CY123456", "CY"))        
     })
     it("It should not return ND", function () {
-        assert.equal(true, regCheck("123456ND", "ND"))        
+        assert.equal(false, regCheck("ND123456", "ND"))        
     })
 
     
